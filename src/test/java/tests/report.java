@@ -66,13 +66,13 @@ public class report {
 //			driver = new ChromeDriver();
 		
 			 extent = new ExtentReports();
-			 spark = new ExtentSparkReporter("C:\\Users\\msromdhana\\Front-End_PFE\\automatisation-Test-App\\src\\assets\\Spark.html");
+			 spark = new ExtentSparkReporter("C:\\Users\\msromdhana\\Front-End_PFE\\automatisation-Test-App\\src\\assets\\Report2.html");
 			extent.attachReporter(spark);
 
 		//	test = extent.createTest("MyFirstTest");
 			test1 = extent.createTest("Creation Projet Prevoyance");
 			test2 = extent.createTest("Creation Projet Sante");
-			test3 = extent.createTest("Creation Projet Prevoyance et Sante");
+			//test3 = extent.createTest("Creation Projet Prevoyance et Sante");
 
 
 		}
@@ -128,16 +128,7 @@ public class report {
 		  test2.log(Status.PASS, "Test passed!");
 	}
 	
-	@Test
-	public void crateProjetSantePrev() throws Exception {
-		
 
-		  test3.log(Status.INFO, "The use case Creation Project prevoyance and Sante  is started!");
-
-
-		  test3.log(Status.PASS, "Test passed!");
-	}
-	
 	
 	
 	@AfterClass(alwaysRun = true)
